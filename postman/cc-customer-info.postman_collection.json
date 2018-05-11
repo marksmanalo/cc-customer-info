@@ -1,0 +1,31 @@
+{
+	"info": {
+		"_postman_id": "b5a46ac4-606b-4beb-9ba4-093b046043f7",
+		"name": "cc-customer-info",
+		"description": "Web requests to test api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:50969/api/values",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50969",
+					"path": [
+						"api",
+						"values"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
