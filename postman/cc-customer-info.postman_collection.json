@@ -10,18 +10,129 @@
 			"name": "GET",
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
 				"body": {},
 				"url": {
-					"raw": "http://localhost:50969/api/values",
-					"protocol": "http",
+					"raw": "{{ApiUrl}}/api/customers",
 					"host": [
-						"localhost"
+						"{{ApiUrl}}"
 					],
-					"port": "50969",
 					"path": [
 						"api",
-						"values"
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET By Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{ApiUrl}}/api/customers/1",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"customers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Customer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"companyName\": \"New Company\",\n\t\"websiteUrl\": \"myUrl.com\",\n\t\"industry\": 1,\n\t\"enterpriseClient\": true,\n\t\"primaryContactId\": null,\n\t\"contacts\": \n\t[\n\t\t{\n\t\t\t\"firstName\": \"first\",\n\t\t\t\"lastName\": \"last\",\n\t\t\t\"email\": \"fae.com\",\n\t\t\t\"phoneNumber\": \"12323423\"\n\t\t}\n\t]\n}"
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/customers",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Customer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 3,\n    \"companyName\": \"update\",\n    \"websiteUrl\": \"myUrl.com\",\n    \"industry\": 1,\n    \"enterpriseClient\": true,\n    \"primaryContactId\": null,\n    \"contacts\": [\n        {\n            \"id\": 3,\n            \"firstName\": \"first\",\n            \"lastName\": \"last\",\n            \"email\": \"fae.com\",\n            \"phoneNumber\": \"12323423\",\n            \"customerId\": 3\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/customers/3",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"customers",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Customer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 3,\n    \"companyName\": \"update\",\n    \"websiteUrl\": \"myUrl.com\",\n    \"industry\": 1,\n    \"enterpriseClient\": true,\n    \"primaryContactId\": null,\n    \"contacts\": [\n        {\n            \"id\": 3,\n            \"firstName\": \"first\",\n            \"lastName\": \"last\",\n            \"email\": \"fae.com\",\n            \"phoneNumber\": \"12323423\",\n            \"customerId\": 3\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "{{ApiUrl}}/api/customers/3",
+					"host": [
+						"{{ApiUrl}}"
+					],
+					"path": [
+						"api",
+						"customers",
+						"3"
 					]
 				}
 			},
