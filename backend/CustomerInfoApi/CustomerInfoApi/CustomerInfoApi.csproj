@@ -109,12 +109,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataModel\DataModel.csproj">
+    <ProjectReference Include="..\DataModel\DataModels.csproj">
       <Project>{83b803f2-4590-4236-a2fd-23fd601b250c}</Project>
-      <Name>DataModel</Name>
+      <Name>DataModels</Name>
     </ProjectReference>
     <ProjectReference Include="..\Repository\Repository.csproj">
       <Project>{d913b7d4-807c-401e-9d83-c2da020ee42e}</Project>

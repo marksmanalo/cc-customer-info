@@ -7,5 +7,7 @@ namespace Repository
     public interface ICustomerRepository
     {
         List<Customer> GetAll();
+        Customer AddOrUpdate(Customer customer);
+        void Delete(int id);
     }
 }

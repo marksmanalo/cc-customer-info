@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerInfoApi", "CustomerInfoApi\CustomerInfoApi.csproj", "{40565100-E65F-49C4-8D12-D495F0EFB3BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModel", "DataModel\DataModel.csproj", "{83B803F2-4590-4236-A2FD-23FD601B250C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModels", "DataModel\DataModels.csproj", "{83B803F2-4590-4236-A2FD-23FD601B250C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{D913B7D4-807C-401E-9D83-C2DA020EE42E}"
 EndProject

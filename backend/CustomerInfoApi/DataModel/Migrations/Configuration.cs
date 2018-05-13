@@ -20,7 +20,7 @@ namespace DataModel.Migrations
                     Id = 1,
                     CompanyName = "CyberCoders",
                     WebsiteUrl = "cybercoders.com",
-                    Industry = Classes.Industry.Defense,
+                    Industry = 1,
                     EnterpriseClient = false,
                     PrimaryContactId = null
                 }
